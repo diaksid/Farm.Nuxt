@@ -1,0 +1,18 @@
+.lazyload
+  background-position: center
+  background-repeat: no-repeat
+  background-color: rgba(192, 192, 192, .3)
+
+  &[lazy=loading]
+    background-size: 15%
+
+  &[lazy=error]
+    background-size: contain
+
+  &[lazy=loaded]
+    background-color: transparent
+    background-size: cover
+
+  &--fluid
+    max-width: 100%
+    height: auto
